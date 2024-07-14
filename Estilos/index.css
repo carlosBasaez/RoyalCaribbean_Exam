@@ -51,6 +51,8 @@ a{
     color:white;
     margin-left: 50px;
     padding: 1px;
+    padding-left: 40px;
+    padding-right: 40px;
     text-decoration: none;
     background-color: #faba12;
     font-family: 'LOVELOBLACK', sans-serif;
@@ -76,6 +78,8 @@ h1{
     width: 100%;
     font-family: 'LOVELOBLACK', sans-serif;
     text-align: center;
+    letter-spacing: 4px;
+    color: #021155;
 }
 h2{
     color: white;
@@ -108,9 +112,9 @@ h2{
 }
 .galeria {
     width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
-    max-width: 1386px;; /* Ancho máximo del contenedor */
+    max-width: 1416px;; /* Ancho máximo del contenedor */
     display: grid;
-    grid-template-columns: repeat(3,380px);
+    grid-template-columns: repeat(3,390px);
     gap: 120px;
     justify-content: center;
     padding-bottom: 20px;
@@ -118,7 +122,7 @@ h2{
 
 .fotos {
     width: 100%;
-    height: 380;
+    height: 390px;
     overflow: hidden; 
   }
   
@@ -137,4 +141,8 @@ h2{
 .contacto{
     display: inline-block;
     margin: 45 100px 1px;
+}
+
+.btn-fondo{
+    background-color: transparent;
 }
