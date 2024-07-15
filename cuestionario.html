@@ -2,7 +2,7 @@
 
 <head>
     <title>Royal Caribbean - Cuestionario</title>
-    <link rel="icon" href="estilos/IMG/killjoys.ico" type=image/x-icon>
+    <link rel="icon" href="estilos/IMG/logo.ico" type=image/x-icon>
     <link href="estilos/cuestionario.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.cdnfonts.com/css/lovelo" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -84,28 +84,21 @@
                 
                 //validar que marque todas las respuestas
                 if (pregunta1 && pregunta2 && pregunta3) {
-                console.log('Pregunta 1:', pregunta1.value);
-                console.log('Pregunta 2:', pregunta2.value);
-                console.log('Pregunta 3:', pregunta3.value);
                 //sumar las respuestas conviertiendo valores en numeros
                 const valorRespuesta1 = parseInt(pregunta1.value)
                 const valorRespuesta2 = parseInt(pregunta2.value)
                 const valorRespuesta3 = parseInt(pregunta3.value)
 
                 const sumaTotal = valorRespuesta1 + valorRespuesta2 + valorRespuesta3;
-                console.log("la suma es " + sumaTotal)
                 //redireccion a que gato eres por la respuesta
                 if (sumaTotal >= 1 && sumaTotal <= 3){
-                    window.location.href = '#';
-                    console.log("crucero frio alaska");
+                    window.location.href = 'respuesta_frio.html';
                 }
                 if(sumaTotal >= 4 && sumaTotal <= 6){
-                    window.location.href = '#';
-                    console.log("crucero templado japanese");  
+                    window.location.href = 'respuesta_templado.html';
                 }
                 if(sumaTotal >= 7 && sumaTotal <= 9){
-                    window.location.href = '#'; 
-                    console.log("crucero calido miami"); 
+                    window.location.href = 'respuesta_calido.html'; 
                 }
                 } else {
                 alert('debes seleccionar todas las respuestas');
